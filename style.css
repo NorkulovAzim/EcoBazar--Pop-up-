@@ -156,6 +156,73 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .modal-inside {
+    flex-direction: column;
+    max-width: 90%;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .right-side h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .sub-form {
+    width: 100%;
+  }
+
+  .sub-input {
+    font-size: 14px;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-inside {
+    flex-direction: column;
+    max-width: 95%;
+    padding: 15px;
+    gap: 16px;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .right-side h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .right-side p {
+    font-size: 14px;
+  }
+
+  .sub-form {
+    width: 100%;
+    height: 45px;
+  }
+
+  .sub-input {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .sub-button {
+    font-size: 14px;
+    padding: 0 15px;
+  }
+}
+
 .cart-sec {
   position: fixed;
   top: 0;
@@ -299,4 +366,31 @@ body {
 
 .cart-close-btn:hover {
   color: #00b207;
+}
+
+@media (max-width: 768px) {
+  .cart-sec {
+    width: 80%;
+  }
+
+  .price-bar,
+  .checkout-btn {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-sec {
+    width: 100%;
+  }
+
+  .price-bar,
+  .checkout-btn {
+    width: 100%;
+  }
+
+  .checkout-btn button {
+    width: 90%;
+    padding: 0;
+  }
 }
