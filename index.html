@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Bazar (Pop up)</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="btn show-btn" id="show-btn">Show Pop-up</button>
+      <button class="btn show-sidebar" id="side-bar-btn">Shopping Card</button>
+    </div>
+
+    <section class="modal hidden" id="modal">
+      <div class="modal-inside">
+        <div class="left-side">
+          <img src="./img/BG.svg" alt="" />
+        </div>
+
+        <div class="right-side">
+          <button class="btn close-btn" id="close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+          <h2>Subcribe to Our <br />Newsletter</h2>
+
+          <p>
+            Subscribe to our newlletter and Save your <br />
+            <span class="highlight">20% money</span> with discount code today.
+          </p>
+
+          <section class="subscribe-sec">
+            <div class="sub-form">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="sub-input"
+              />
+              <button class="sub-button">Subscribe</button>
+            </div>
+          </section>
+
+          <div class="dont-show">
+            <input type="checkbox" />
+            <label for="">Do not show this window</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cart-sec hidden" id="cart">
+      <div class="cart-wrap">
+        <div class="header-cart">
+          <h2>Shopping Cart (2)</h2>
+          <button class="btn cart-close-btn">
+            <i class="fas fa-close"></i>
+          </button>
+        </div>
+
+        <div class="cart-menu">
+          <div class="orange">
+            <img src="./img/orange.svg" alt="" />
+            <div>
+              <p>Fresh Indian Orange</p>
+              <span>1 kg x 12.00</span>
+            </div>
+            <button class="btn shop-close-btn">
+              <i class="fas fa-close"></i>
+            </button>
+          </div>
+
+          <div class="line"></div>
+
+          <div class="apple">
+            <img src="./img/apple.svg" alt="" />
+            <div>
+              <p>Fresh Indian Apple</p>
+              <span>1 kg x 12.00</span>
+            </div>
+            <button class="btn shop-close-btn">
+              <i class="fas fa-close"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="price-bar">
+          <p>2 Product</p>
+          <span>$26.00</span>
+        </div>
+
+        <div class="checkout-btn">
+          <button class="checkout">Checkout</button>
+          <button class="go-cart">Go To Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
